@@ -9,10 +9,11 @@ function toggleButton(){
     button.disabled = !button.disabled;
 }
 
+
 // Passing joke to voiceRSS API
 function tellJoke(joke){
     VoiceRSS.speech({
-        key: process.env.API_KEY,
+        key: $API_KEY,
         src: joke,
         hl: 'en-us',
         r: 0,
