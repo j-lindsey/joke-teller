@@ -13,7 +13,7 @@ function toggleButton(){
 // Passing joke to voiceRSS API
 function tellJoke(joke){
     VoiceRSS.speech({
-        key: $API_KEY,
+        key: $API_TOKEN,
         src: joke,
         hl: 'en-us',
         r: 0,
